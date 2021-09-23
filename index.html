@@ -89,12 +89,14 @@
                         
                     </ul>
                 </div>
-                <div class="footer_box">    
+                <div class="footer_box"> 
+                    <p id="test"></p>
                 </div>
             </footer>
         </div><!--Closing container-->
         <script>
-
+        document.getElementById("test").innerHTML = document.body.innerText
+        document.getElementById("test").style.fontSize="x-large";
         </script>
     </body>
 </html>
