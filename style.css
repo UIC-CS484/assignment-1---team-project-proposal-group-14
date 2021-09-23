@@ -38,6 +38,12 @@ footer{
     height: 250px;
 }
 
+.title {
+    font-size: 80px;
+    margin: auto;
+    width: 50%;
+}
+
             /* smaller than 1024 pixels */
 @media screen and (max-width: 1024px) {
     header{
