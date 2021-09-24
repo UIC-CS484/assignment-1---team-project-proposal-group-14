@@ -40,18 +40,15 @@
             </section>
             
             <section class="middleboxes drop">
-                <ul><h2>The potential users that we plan on targeting for our site are National Football League enthusiasts.</h2>
-                <li><h2>Goals</h2>
-                    <ul>
-                        <li>Provide a community for Football Enthusiasts.</li>
-                        <li>A place where people can talk live to other people who watching the game.</li>
-                    </ul>
-                </li>
-                <li>The reason why our team picked this topic is because we're all very passionate about sports. Also, when we talked about
+                <h2>The potential users that we plan on targeting for our site are National Football League enthusiasts.</h2>
+                <h2>Goals</h2>
+                <ul>
+                    <li>Provide a community for Football Enthusiasts.</li>
+                    <li>A place where people can talk live to other people who watching the game.</li>               
+                </ul>
+                The reason why our team picked this topic is because we're all very passionate about sports. Also, when we talked about
                     using other topics such as weather, or covid none of us seemed motivated about if we stuck with doing something we weren't intereted in. So our grouped decided
                     on sticking to sports and we happen to come to a common ground where we all watched the National Football League.
-                </li>
-                </ul>
             </section>
             <footer>
                 <div class="footer_box">
@@ -102,7 +99,7 @@
                 </div>
                 <div class="footer_box"> 
                     <form>
-                        <select name="text_size" id="home_page_text_size" onchange="changeText(this);">
+                        <select id="home_page_text_size" onselect="changeText(size);">
                             <option value="small">Small</option>
                             <option value="medium">Medium</option>
                             <option value="Large">Large</option>
@@ -114,8 +111,9 @@
         </div><!--Closing container-->
         <script>
             function changeText(size){
-                var sizeValue = document.getElementById("home_page_text_size").select.options[select.selectedIndex].value;
-                console.log(sizeValue);
+                var sizeElement = document.getElementById('home_page_text_size');
+                var sizeValue = select.options[size.selectedIndex];
+                console.log("hello");
             };
         </script>
     </body>
