@@ -88,21 +88,22 @@
                 </div>
                 <div class="footer_box"> 
                     <form>
-                        <select id="home_page_text_size" onselect="changeText(size);">
-                            <option value="small">Small</option>
-                            <option value="medium">Medium</option>
-                            <option value="Large">Large</option>
+                        <select id="home_page_text_size" onchange="changeText()">
+                            <option value="xx-small">Small</option>
+                            <option value="medium">Normal</option>
+                            <option value="large">Large</option>
                         </select>
                     </form>
                     <p id="test2"></p>
                 </div>
             </footer>
         </div><!--Closing container-->
-        <script>
-            function changeText(size){
-                var sizeElement = document.getElementById('home_page_text_size');
-                var sizeValue = select.options[size.selectedIndex];
-                console.log("hello");
+        <script type="text/javascript">
+            function changeText(){
+                var elementId = document.getElementById('home_page_text_size');
+                var size = elementId.options[elementId.selectedIndex].value;
+                document.getElementById("test").style.fontSize = size;
+          
             };
         </script>
     </body>
