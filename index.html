@@ -11,7 +11,7 @@
        <link rel="stylesheet" href="style.css">
 
     </head>
-    <body>
+    <body id="test">
         <div id="container">
             <header>
                 <h1 class="title"> NFL Discussion </h1>
@@ -97,13 +97,22 @@
                     </ul>
                 </div>
                 <div class="footer_box"> 
-                    <p id="test"></p>
+                    <form>
+                        <select name="text_size" id="home_page_text_size" onchange="changeText(this);">
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
+                    </form>
+                    <p id="test2"></p>
                 </div>
             </footer>
         </div><!--Closing container-->
         <script>
-        document.getElementById("test").innerHTML = document.body.innerText
-        document.getElementById("test").style.fontSize="x-large";
+            function changeText(size){
+                var sizeValue = document.getElementById("home_page_text_size").select.options[select.selectedIndex].value;
+                console.log(sizeValue);
+            };
         </script>
     </body>
 </html>
