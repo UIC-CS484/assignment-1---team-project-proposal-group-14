@@ -2,7 +2,8 @@
 ## NFL Discussion
 
 The Team will share most of the backend development so everyone gets the experience of setting up a Database and API connection.
-Work will be split up when we begin front-end development or when we get a better grasp on the development process of your project.
+Work will be split up when we begin front-end development or when we get a better grasp on the development process of our project or when our team is
+more comortable working with the technology stack.
 
 ## Team
 - Kevin Ramirez
